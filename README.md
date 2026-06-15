@@ -10,7 +10,7 @@ cd ExLang
 chmod +x exlang
 ```
 
-## 🛠 ビルド手順（ソースから）
+## ビルド手順（ソースから）
 
 ```bash
 make              # exlang 本体をビルド
@@ -32,7 +32,7 @@ g++ -std=c++17 -Wall -fPIC -rdynamic -Wl,--export-dynamic -o exlang *.cpp -ldl -
 g++ -std=c++17 -shared -fPIC -Wl,--export-dynamic -o math.so math_ext.cpp -I.
 ```
 
-## 🚀 実行方法
+## 実行方法
 
 ```bash
 # ファイル実行
@@ -42,7 +42,7 @@ g++ -std=c++17 -shared -fPIC -Wl,--export-dynamic -o math.so math_ext.cpp -I.
 ./exlang
 ```
 
-## 📋 言語仕様
+## 言語仕様
 
 ### 基本
 - **変数**: `let x = 10;`
@@ -81,7 +81,7 @@ import "math";
 
 **注意**: すべての文は `;` で終了（ブロック除く）
 
-## 🔌 C拡張の作成方法
+## C拡張の作成方法
 
 C拡張は `libs/` ディレクトリに置くことを推奨。
 
@@ -124,7 +124,7 @@ import "myext";
 myfunc();
 ```
 
-## 📁 ファイル構成
+## ファイル構成
 - `exlang`          - 実行バイナリ
 - `hello.ex`        - 基本サンプル
 - `extension_example.ex` - C拡張サンプル
